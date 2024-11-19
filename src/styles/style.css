@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* Общий стиль фона и шрифтов */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 15px;
+    border-bottom: 2px solid #333;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #000;
+    background-color: #f3f3f3;
+    border: 2px solid #333;
+}
+
+/* Стиль контейнера страниц */
+h1, p {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 2rem;
+    border: 2px solid #333;
+    padding: 10px;
+    background: linear-gradient(white, #eee);
+    box-shadow: 4px 4px 0 #000;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Сетка манга-стиля */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 0 #000;
+}
+
+/* Дополнительные эффекты */
+.manga-effect {
+    border: 2px solid #333;
+    padding: 10px;
+    position: relative;
+    background: #fff;
+}
+
+.manga-effect:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 0 #000;
+}
